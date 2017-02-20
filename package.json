@@ -1,0 +1,25 @@
+{
+  "name": "booklook",
+  "version": "1.0.0",
+  "description": "EA booklook work ",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexbnk/booklook.git"
+  },
+  "author": "EA/Alex Benedek",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alexbnk/booklook/issues"
+  },
+  "homepage": "https://github.com/alexbnk/booklook#readme",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "font-awesome": "^4.7.0",
+    "handlebars": "^4.0.6",
+    "jquery": "^3.1.1"
+  }
+}
