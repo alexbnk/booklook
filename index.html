@@ -21,13 +21,13 @@
 
             <div class="form-group">
 
-              <input type="text" id="isbn_search" class="form-control" placeholder="ISBN Number">
+              <input type="text" id="isbn_search" class="form-control" placeholder="ISBN Number" value="0439023521">
               </input>
             </div>
 
             <button type="button" class="btn btn-primary search">Search</button>
           </form>
-          <div class=" posts">
+          <div class="result">
           </div>
         </div>
       </div>
@@ -39,5 +39,37 @@
 <script src="node_modules/jquery/dist/jquery.min.js"> </script>
 <script src="node_modules/handlebars/dist/handlebars.js"></script>
 <script src="script.js"></script>
+
+
+
+
+
+
+
+
+<script id="book-template" type="text/x-handlebars-template">
+<div class=" book">
+<h3>{{ booktitle }}</h3>
+<h4>{{ booksubtitle }}</h4>
+<p>{{bookdescription}}</p>
+<h4> Written by: {{ bookauthor }}</h4>
+<img src= {{ bookcover }}/>
+</div>
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   </body>
 </html>
