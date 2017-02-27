@@ -29,11 +29,23 @@
           </form>
           <div class="result">
           </div>
+
         </div>
       </div>
 
 
 
+</div>
+
+<div class="modal hide" id="pleaseWaitDialog" data-backdrop="static" data-keyboard="false">
+    <div class="modal-header">
+        <h1>Please Wait</h1>
+    </div>
+    <div class="modal-body">
+        <div id="ajax_loader">
+            <img src="Images/loading.gif" style="display: block; margin-left: auto; margin-right: auto;">
+        </div>
+    </div>
 </div>
 
 <script src="node_modules/jquery/dist/jquery.min.js"> </script>
@@ -48,12 +60,28 @@
 
 
 <script id="book-template" type="text/x-handlebars-template">
-<div class=" book">
+<div class=" book" data-id={{ bookisbn }}>
+
 <h3>{{ booktitle }}</h3>
 <h4>{{ booksubtitle }}</h4>
+<img src={{ bookcover}}/>
+<h5>ISBN:{{ bookisbn }}</h5>
 <p>{{bookdescription}}</p>
 <h4> Written by: {{ bookauthor }}</h4>
-<img src= {{ bookcover }}/>
+
+</div>
+</script>
+
+<script id="fullbook-template" type="text/x-handlebars-template">
+<div class=" book" data-id={{ bookisbn }}>
+
+<h3>{{ booktitle }}</h3>
+<h4>{{ booksubtitle }}</h4>
+<img src={{ bookcover}}/>
+<h5>ISBN:{{ bookisbn }}</h5>
+<p>{{bookdescription}}</p>
+<h4> Written by: {{ bookauthor }}</h4>
+
 </div>
 </script>
 
